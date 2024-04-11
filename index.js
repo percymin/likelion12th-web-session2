@@ -9,17 +9,25 @@ const addItem = (todo) => {
     const li = document.createElement('li');
     const button = document.createElement('button');
     const span = document.createElement('span');
+    const checkbox = document.createElement('input');
 
     span.innerHTML =  todo.text;
     button.innerHTML = '삭제';
     button.addEventListener('click', delItem);
 
+
+    checkbox.type = 'checkbox';
+    checkbox.checked = false;
+    
+    li.appendChild(checkbox);
     li.appendChild(span);
     li.appendChild(button);
     ul.appendChild(li);
     li.id =todo.id; // li id랑 todo id랑 동일하다고 명시
     }
 };
+
+
 
 
 const save = () => {

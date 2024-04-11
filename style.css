@@ -47,10 +47,17 @@
   
   li {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     border-bottom: 1px dotted lightgray;
     padding-bottom: 7px;
     margin-bottom: 7px;
-  }
-  
+}
+
+span {
+    margin-right: 50px;
+}
+
+input[type="checkbox"] {
+    width: 20px;
+    margin-right: 300px;
+}
